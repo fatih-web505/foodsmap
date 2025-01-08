@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E1; /* Soft Cream */
+    color: #4E342E; /* Dark Brown */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FF7043; /* Deep Orange */
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bolder;
+    color: #FFF8E1; /* Soft Cream */
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    color: #FFE0B2; /* Lighter Orange */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.food-item {
+    border: 1px solid #FF7043; /* Deep Orange */
+    border-radius: 8px;
+    padding: 15px;
+    background: #FFF; /* White */
+    width: 22%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.food-item h3 {
+    font-size: 0.9em; /* Ukuran font judul lebih kecil */
+    color: #4E342E; /* Dark Brown */
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.food-item p {
+    font-size: 0.7em; /* Ukuran font deskripsi lebih kecil */
+    color: #6D4C41; /* Rich Chocolate */
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: justify;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+.location a {
+    text-decoration: none;
+    color: #FFD54F; /* Light Golden */
+    font-weight: bold;
+}
+
+.location a:hover {
+    text-decoration: underline;
+    color: #FF7043; /* Deep Orange */
+}
+
+footer {
+    background-color: #424242; /* Charcoal Gray */
+    color: #FFF8E1; /* Soft Cream */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #FFD54F; /* Light Golden */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .food-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .food-item {
+        width: 100%;
+    }
+}
